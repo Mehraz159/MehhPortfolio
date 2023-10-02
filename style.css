@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-size: 400%;
+    color: rgb(255, 88, 88);
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+    border: 2px solid black;
+}
+
+.nav {
+    font-family: 'Mooli', sans-serif;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    justify-content: space-around;
+}
+
+.about:hover,
+.home:hover,
+.projects:hover,
+.contact:hover {
+    color: rgb(255, 88, 88);
+}
