@@ -18,7 +18,6 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 6vw;
     color: white;
-
 }
 
 #header {
@@ -32,29 +31,31 @@ h1 {
 .my-work {
     font-size: 3vw;
     border: 2px solid rgb(255, 88, 88);
-    padding: 3px;
+    padding: 4px;
+    border-radius: 10px;
 }
 
-.my-work::after {
-    content: url(./favicon_io/favicon-16x16.png);
-}
+
 
 .my-work {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
 
+.arrow {
+    width: 3vw;
+    position: relative;
+    top: 4px;
+}
+
 .nav {
     font-family: 'Mooli', sans-serif;
     display: flex;
-    flex-direction: row;
-    height: 50px;
+    height: 5vh;
     position: sticky;
     top: 0px;
     background-color: rgb(56, 56, 56);
     color: white;
-    /*justify-content: space-around;*/
-
 }
 
 .nav a {
