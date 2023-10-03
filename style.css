@@ -1,6 +1,12 @@
 * {
     padding: 0px;
     margin: 0px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -11,7 +17,7 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
     ;
-    font-size: 5vw;
+    font-size: 4vw;
     color: rgb(255, 88, 88);
 }
 
@@ -20,15 +26,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(29, 29, 29);
 }
 
 .nav {
     font-family: 'Mooli', sans-serif;
     display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-direction: row;
+    height: 50px;
     position: sticky;
     top: 0px;
     background-color: rgb(68, 68, 68);
@@ -36,9 +41,21 @@ h1 {
     justify-content: space-around;
 }
 
-.about:hover,
-.home:hover,
-.projects:hover,
-.contact:hover {
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: rgb(68, 68, 68);
+}
+
+.nav a:hover {
     color: rgb(255, 88, 88);
+}
+
+.body {
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh;
 }
