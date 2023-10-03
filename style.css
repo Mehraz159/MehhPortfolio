@@ -16,9 +16,9 @@ html {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    ;
     font-size: 4vw;
-    color: rgb(255, 88, 88);
+    color: white;
+
 }
 
 #header {
@@ -29,6 +29,21 @@ h1 {
     background-color: rgb(29, 29, 29);
 }
 
+.my-work {
+    font-size: 2vw;
+    border: 2px solid rgb(255, 88, 88);
+    padding: 3px;
+}
+
+.my-work::after {
+    content: url(./favicon_io/favicon-16x16.png);
+}
+
+.my-work {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .nav {
     font-family: 'Mooli', sans-serif;
     display: flex;
@@ -36,9 +51,10 @@ h1 {
     height: 50px;
     position: sticky;
     top: 0px;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(56, 56, 56);
     color: white;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+
 }
 
 .nav a {
@@ -48,11 +64,28 @@ h1 {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(56, 56, 56);
+    border: 1px solid rgb(56, 56, 56);
+
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 .nav a:hover {
     color: rgb(255, 88, 88);
+    border: 1px solid rgb(255, 88, 88);
+    border-radius: 10px;
+}
+
+.nav .home {
+    background-color: rgb(255, 88, 88);
+    color: black;
+
+}
+
+.nav .home:hover {
+    color: black;
+    border: 1px solid white;
 }
 
 .body {
